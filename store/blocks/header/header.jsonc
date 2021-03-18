@@ -121,11 +121,15 @@
     "children": ["menu#drawer"]
   },
 
+  // menu hamburguesa - items
   "menu#drawer": {
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "menu-item#electrohogar",
+      "menu-item#decohogar",
+      "menu-item#menos-s99"
     ],
     "props": {
       "orientation": "vertical"

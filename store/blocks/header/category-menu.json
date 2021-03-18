@@ -6,7 +6,10 @@
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "menu-item#electrohogar",
+      "menu-item#decohogar",
+      "menu-item#menos-s99"
     ]
   },
   "menu-item#category-apparel": {
@@ -19,8 +22,8 @@
         "type": "internal",
         "href": "/apparel---accessories/",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Vende aquí",
+        "text": "VENDE AQUÍ"
       }
     },
     "blocks": [
@@ -100,8 +103,8 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Mundo Orgánico",
+        "text": "MUNDO ORGÁNICO"
       }
     }
   },
@@ -115,8 +118,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "Tecnología",
+        "text": "TECNOLOGÍA"
       }
     },
     "blocks": [
@@ -198,6 +201,52 @@
         "noFollow": true,
         "tagTitle": "Contact Us",
         "text": "Contact Us"
+      }
+    }
+  },
+
+  "menu-item#electrohogar": {
+    "props": {
+      "id": "menu-item-decohogar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Decohogar",
+        "text": "DECOHOGAR"
+      }
+    }
+  },
+  "menu-item#decohogar": {
+    "props": {
+      "id": "menu-item-electrohogar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Electrohogar",
+        "text": "ELECTROHOGAR"
+      }
+    }
+  },
+  "menu-item#menos-s99": {
+    "props": {
+      "id": "menu-item-menos-s99",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Menos de S/99",
+        "text": "MENOS DE S/99"
       }
     }
   }

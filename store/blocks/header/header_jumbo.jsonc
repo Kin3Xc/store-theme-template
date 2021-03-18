@@ -1,0 +1,100 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "sticky-layout#desktop"
+    ]
+  },
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop",
+      "flex-layout.row#4-desktop"
+    ]
+  },
+
+  "flex-layout.row#2-desktop": {
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#buscador",
+      "flex-layout.col#login"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["rich-text#item-menu"]
+  },
+  "flex-layout.col#buscador": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#login": {
+    "children": ["rich-text#item-menu"]
+  },
+
+
+  "flex-layout.row#3-desktop": {
+    "children": [
+      "flex-layout.col#category",
+      "flex-layout.col#ofertas",
+      "flex-layout.col#catalogo",
+      "flex-layout.col#tiendas",
+      "flex-layout.col#servicios",
+      "flex-layout.col#carrito"
+    ]
+  },
+  "flex-layout.row#4-desktop": {
+    "children": [
+      "image#banner"
+    ]
+  },
+  "image#banner": {
+    "props": {
+      "src": "https://jumbocolombiafood.vteximg.com.br/arquivos/Bnr-flotante-header-Desk-GEN-Televisores-Feb-2021.jpg?v=637497795663530000"
+    }
+  },
+  "flex-layout.col#category": {
+    "children": ["rich-text#item-menu"]
+  },
+  "flex-layout.col#ofertas": {
+    "children": ["rich-text#item-menu"]
+  },
+  "flex-layout.col#catalogo": {
+    "children": ["rich-text#item-menu"]
+  },
+  "flex-layout.col#tiendas": {
+    "children": ["rich-text#item-menu"]
+  },
+  "flex-layout.col#servicios": {
+    "children": ["rich-text#item-menu"]
+  },
+  "flex-layout.col#carrito": {
+    "children": ["rich-text#item-menu"]
+  },
+  "rich-text#item-menu": { 
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "TITLE"
+    }
+  }
+}

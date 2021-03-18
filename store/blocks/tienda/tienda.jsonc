@@ -1,0 +1,110 @@
+{
+  "store.custom#tienda": {
+    "blocks": [
+      "flex-layout.row#1",
+      "flex-layout.row#2",
+      "flex-layout.row#3"
+    ]
+  },
+
+  // row 1
+  "flex-layout.row#1": {
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#center",
+      "flex-layout.col#right"
+    ]
+  },
+
+  // row 2
+  "flex-layout.row#2": {
+    "children": [
+      "flex-layout.col#row2"
+    ]
+  },
+
+  // izquierda row1
+  "flex-layout.col#left": {
+    "children": [
+      "rich-text#left1"
+    ]
+  },
+  "rich-text#left1": {
+    "props": {
+      "text": "# Mi tienda \n1. Productos \n2. Descuentos \n3. Otros",
+      "textAligment": "CENTER",
+      "blockClass": "textClass"
+    }
+  },
+
+
+  // centro row1
+  "flex-layout.col#center": {
+    "children": [
+      "info-card#center1"
+    ]
+  },
+  "info-card#center1": {
+    "props": {
+      "id": "card-1",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "textAlignment": "CENTER",
+      "isFullModeStyle": true,
+      "headline": "Ecneuntra nuestros mejores productos",
+      "callToActionText": "Ver más",
+      "callToActionUrl": "/shop",
+      "textPosition": "left"
+    }
+  },
+
+
+  // derecha row1
+  "flex-layout.col#right": {
+    "children": [
+      "image#example"    
+    ]
+  },
+  "image#example": {
+    "props": {
+      "src": "https://cnnespanol.cnn.com/wp-content/uploads/2020/07/200703104728-labrador-retriever-stock-super-169.jpg?quality=100&strip=info"
+    }
+  },
+
+
+  "flex-layout.col#row2": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "iframe#video"
+    ]
+  },
+  // contenido row 2
+  "iframe#video": {
+    "props": {
+      "src": "https://www.youtube.com/embed/azfKhDMIrZo",
+      "width": "100%",
+      "height": 500
+    }
+  },
+
+  // row 3
+  "flex-layout.row#3": {
+    "children": ["flex-layout.col#row3"]
+  },
+  "flex-layout.col#row3": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "list-context.product-list#demo2"
+    ]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "category": "1"
+    }
+  }
+}

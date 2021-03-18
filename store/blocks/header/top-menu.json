@@ -2,7 +2,8 @@
   "vtex.menu@2.x:menu#websites": {
     "children": [
       "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#about-us",
+      "menu-item#tienda"
     ]
   },
   "menu-item#shop": {
@@ -37,6 +38,21 @@
         "noFollow": false,
         "tagTitle": "visit vtex.com",
         "text": "visit vtex.com"
+      }
+    }
+  },
+  "menu-item#tienda": {
+    "props": {
+      "id": "menu-item-tienda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tienda",
+        "noFollow": false,
+        "tagTitle": "Ver tienda",
+        "text": "Tienda"
       }
     }
   }

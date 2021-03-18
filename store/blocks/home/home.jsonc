@@ -11,7 +11,9 @@
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
-      "newsletter"
+      "newsletter",
+      // "flex-layout.row#test",
+      "flex-layout.row#ejercicio"
     ]
   },
 
@@ -99,5 +101,144 @@
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
+  },
+
+  "flex-layout.row#test": {
+    "props": {
+      "blockClass": "testClass"
+    },
+    "children": [
+      "flex-layout.col#primero",
+      "flex-layout.col#segundo",
+      "rich-text#test",
+      "rich-text#test"
+    ]
+  },
+
+  // primer bloque
+  "flex-layout.col#primero": {
+    "props": {
+      "props": {
+        "blockClass": "primeroClass"
+      }
+    },
+    "children": ["rich-text#primero"]
+  },
+  "rich-text#primero": {
+    "props": {
+      "text": "## Primer bloque",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // segundo bloque
+  "flex-layout.col#segundo": {
+    "children": ["rich-text#segundo"]
+  },
+  "rich-text#segundo": {
+    "props": {
+      "text": "## Segundo bloque",
+      "textPosition": "CENTER"
+    }
+  },
+
+
+  "rich-text#test": {
+    "props": {
+      "text": "## Hola mmundo desde VTEXT IO!",
+      // "textAlignment": "CENTER"
+      "textPosition": "CENTER"
+    }
+  },
+
+
+  "rich-text#lorem": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  // ejercicio
+  "flex-layout.row#ejercicio": {
+    "children": [
+      "flex-layout.col#col1",
+      "flex-layout.col#col2"
+    ]
+  },
+  "flex-layout.col#col1": {
+    "props": {
+      "horizontalAlign": "middle",
+      "verticalAlign": "middle",
+      "borderColor": "black",
+      "borderWidth": 2,
+      "border": "all"
+    },
+    "children": ["image#example"]
+  },
+  "image#example": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+      "maxHeight": 24
+    }
+  },
+
+  "flex-layout.col#col2": {
+    "props": {
+      "horizontalAlign": "middle",
+      "verticalAlign": "middle",
+      "borderColor": "black",
+      "borderWidth": 2,
+      "border": "all"
+    },
+    "children": [
+      "flex-layout.col#col-interna1",
+      "flex-layout.col#col-interna2",
+      "flex-layout.col#col-interna3"
+    ]
+  },
+
+  "flex-layout.col#col-interna1": {
+    "props": {
+      "borderColor": "black",
+      "borderWidth": 2,
+      "border": "all"
+    },
+    "children": ["flex-layout.row#interna1-container"]
+  },
+  "flex-layout.col#col-interna2": {
+    "props": {
+      "borderColor": "black",
+      "borderWidth": 2,
+      "border": "all"
+    },
+    "children": ["rich-text#lorem"]
+  },
+  "flex-layout.col#col-interna3": {
+    "props": {
+      "borderColor": "black",
+      "borderWidth": 2,
+      "border": "all"
+    },
+    "children": ["rich-text#lorem"]
+  },
+
+  "flex-layout.row#interna1-container": {
+    "children": [
+      "rich-text#lorem",
+      "flex-layout.col#utlima-col"
+    ]
+  },
+  "flex-layout.col#utlima-col": {
+    "props": {
+      "borderColor": "black",
+      "borderWidth": 2,
+      "border": "all"
+    },
+    "children": [
+      "rich-text#lorem",
+      "rich-text#lorem"
+    ]
   }
 }
