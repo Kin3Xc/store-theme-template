@@ -1,13 +1,20 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "drawer",
+      "menu-item#categories",
+      "menu-item#mundo-organico",
+      "menu-item#tecnologia",
+      "menu-item#electrohogar",
+      "menu-item#decohogar",
+      "menu-item#menos-de-s99"
     ]
   },
-  "menu-item#shop": {
+
+  "menu-item#categories": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-categories",
+      "blockClass": "menu-item",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -15,28 +22,88 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "Vende aquí",
+        "text": "VENDE AQUÍ"
       }
     }
   },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
-  },
-  "menu-item#vtex-website": {
+  "menu-item#mundo-organico": {
     "props": {
-      "id": "menu-item-vtex-website",
+      "id": "menu-item-mundo-organico",
+      "blockClass": "menu-item",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+        "tagTitle": "Mundo Orgánico",
+        "text": "MUNDO ORGÁNICO"
+      }
+    }
+  },
+  "menu-item#tecnologia": {
+    "props": {
+      "id": "menu-item-tecnologia",
+      "blockClass": "menu-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tecnología",
+        "text": "TECNOLOGÍA"
+      }
+    }
+  },
+  "menu-item#electrohogar": {
+    "props": {
+      "id": "menu-item-electrohogar",
+      "blockClass": "menu-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Electrohogar",
+        "text": "ELECTROHOGAR"
+      }
+    }
+  },
+  "menu-item#decohogar": {
+    "props": {
+      "id": "menu-item-decohogar",
+      "blockClass": "menu-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Decohogar",
+        "text": "DECOHOGAR"
+      }
+    }
+  },
+  "menu-item#menos-de-s99": {
+    "props": {
+      "id": "menu-item-menos-de-s99",
+      "blockClass": "menu-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Menos de S/99",
+        "text": "MENOS DE S/99"
       }
     }
   }

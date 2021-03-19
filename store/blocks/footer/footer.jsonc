@@ -10,31 +10,39 @@
     ]
   },
   "flex-layout.row#footer-1-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
-    ],
     "props": {
       "blockClass": "menu-row",
+      "horizontalAlign": "center",
       "paddingTop": 6,
       "paddingBottom": 3
-    }
+    },
+    "children": [
+      "rich-text#contact-info",
+      "vtex.menu@2.x:menu#Products",
+      "vtex.menu@2.x:menu#footer-clothing",
+      // "vtex.menu@2.x:menu#footer-decoration",
+      // "vtex.menu@2.x:menu#footer-bags",
+      // "footer-spacer",
+      "flex-layout.col#social-info"
+    ]
   },
 
+  "flex-layout.col#social-info":{
+    "children": [
+      "rich-text#social-title",
+      "social-networks",
+      "rich-text#medio-pago",
+      "image#medio-pago",
+      "rich-text#libro-reclamaciones"
+    ]
+  },
   "social-networks": {
     "props": {
+      "blockClass": "social-class",
       "socialNetworks": [
         {
           "name": "Facebook",
           "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
         },
         {
           "name": "Twitter",
@@ -43,8 +51,30 @@
         {
           "name": "Youtube",
           "url": "https://www.youtube.com/user/VTEXTV"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
         }
       ]
+    }
+  },
+  "rich-text#medio-pago": {
+    "props": {
+      "blockClass": ["text-class", "medio-pago-class"],
+      "text": "MEDIOS DE PAGO"
+    }
+  },
+  "image#medio-pago": {
+    "props": {
+      "src": "https://realplaza.vtexassets.com/arquivos/light-cards-2.png",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#libro-reclamaciones": {
+    "props": {
+      "blockClass": "text-class",
+      "text": "LIBRO DE RECLAMACIONES"
     }
   },
 

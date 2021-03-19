@@ -1,14 +1,27 @@
 {
+  "rich-text#contact-info": {
+    "props": {
+      "blockClass": "text-class",
+      "text": "CONTÁCTANOS\n\n\nLLÁMANOS\n(1) 601-4000\n\nDe lunes a sábado\nde 9:00am a 7:00pm domingos y\nferiados de 9:00am a 3:00pm\n\nESCRÍBENOS\n[servicioalcliente@realplazago.com](mailto:servicioalcliente@realplazago.com)"
+    }
+  },
   "vtex.menu@2.x:menu#Products": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
+      "rich-text#servicio-cliente",
       "menu-item#news",
       "menu-item#blackfriday",
       "menu-item#sale",
       "menu-item#personalization"
     ]
+  },
+  "rich-text#servicio-cliente": {
+    "props": {
+      "blockClass": "text-class",
+      "text": "SERVICIO AL CLIENTE"
+    }
   },
   "menu-item#news": {
     "props": {
@@ -20,8 +33,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "¿Cómo comprar en Real Plaza Go?",
+        "text": "¿Cómo comprar en Real Plaza Go?"
       }
     }
   },
@@ -35,8 +48,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Preguntas Frecuentes",
+        "text": "Preguntas Frecuentes"
       }
     }
   },
@@ -50,8 +63,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Términos y Condiciones",
+        "text": "Términos y Condiciones"
       }
     }
   },
@@ -65,8 +78,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Política de Privacidad",
+        "text": "Política de Privacidad"
       }
     }
   },
@@ -194,13 +207,21 @@
       "orientation": "vertical"
     },
     "children": [
+      "rich-text#section-title",
       "menu-item#clothing",
       "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#tank-tops"
+      // "menu-item#shirts",
+      // "menu-item#sweatshirt",
+      // "menu-item#cropped"
     ]
+  },
+
+  "rich-text#section-title": {
+    "props": {
+      "blockClass": "text-class",
+      "text": "SECCIONES"
+    }
   },
 
   "vtex.menu@2.x:menu#footer-mobile": {
@@ -305,8 +326,8 @@
         "type": "internal",
         "href": "/clothing/d",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Vende en Real Plaza Go",
+        "text": "Vende en Real Plaza Go"
       }
     }
   },
@@ -321,8 +342,8 @@
         "type": "internal",
         "href": "/clothing/shorts",
         "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
+        "tagTitle": "Nosotros",
+        "text": "Nosotros"
       }
     }
   },
@@ -337,8 +358,8 @@
         "type": "internal",
         "href": "/clothing/tank-tops",
         "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
+        "tagTitle": "Cyber Real Plaza GO",
+        "text": "Cyber Real Plaza GO"
       }
     }
   },
@@ -388,6 +409,14 @@
         "tagTitle": "Cropped",
         "text": "Cropped"
       }
+    }
+  },
+
+
+  "rich-text#social-title": {
+    "props": {
+      "blockClass": "text-class",
+      "text": "SÍGUENOS"
     }
   }
 }
