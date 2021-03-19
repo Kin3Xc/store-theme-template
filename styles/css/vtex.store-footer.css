@@ -46,3 +46,27 @@
 :global(.vtex-flex-layout-0-x-flexRow--menu-row) :global(.vtex-flex-layout-0-x-flexColChild){
   height: auto !important;
 }
+:global(.vtex-flex-layout-0-x-flexRowContent--text-location) :global(.vtex-rich-text-0-x-paragraph){
+  color: #fff;
+  font-size: 13px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--text-location) :global(.vtex-rich-text-0-x-paragraph)::before{
+  font-family: icoomon;
+  font-size: 44px;
+  margin-top: -17px;
+  margin-right: 8px;
+  color: #ffc841;
+  content: "\e948";
+  float: left;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--text-location){
+  border-bottom: 2px solid #af9de2;
+}
+:global(.vtex-rich-text-0-x-wrapper--footer){
+  width: 100%;
+}
+:global(.vtex-rich-text-0-x-paragraph--footer){
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
