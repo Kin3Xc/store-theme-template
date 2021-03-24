@@ -1,0 +1,25 @@
+.cartIcon{
+  background: url('https://res.cloudinary.com/oglit/image/upload/v1616598969/realplazago/cart-icon.png') no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 30px;
+  height: 100%;
+}
+.minicartQuantityBadge{
+  background-color: #fff;
+  color: #7300e0;
+  font-weight: 800;
+  top: -4px;
+  left: 20px;
+}
+.openIconContainer{
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) :global(.vtex-minicart-2-x-cartIcon){
+  background: url('https://res.cloudinary.com/oglit/image/upload/v1616613531/realplazago/cart-mobile.png') no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 30px;
+  height: 100%;
+}

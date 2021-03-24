@@ -28,6 +28,7 @@
       "id": "menu-item-news",
       "type": "custom",
       "iconId": null,
+      "blockClass": "menu-link",
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -41,6 +42,7 @@
   "menu-item#blackfriday": {
     "props": {
       "id": "menu-item-black-friday",
+      "blockClass": "menu-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -56,6 +58,7 @@
   "menu-item#sale": {
     "props": {
       "id": "menu-item-sale",
+      "blockClass": "menu-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -71,6 +74,7 @@
   "menu-item#personalization": {
     "props": {
       "id": "menu-item-personalization",
+      "blockClass": "menu-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -231,13 +235,15 @@
     "children": [
       "menu-item#clothing-mobile",
       "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
+      "menu-item#sale-mobile",
+      "menu-item#siguenos-mobile"
     ]
   },
 
   "menu-item#clothing-mobile": {
     "props": {
       "id": "menu-item-category-clothing",
+      "blockClass": "acordeon-menu",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -245,13 +251,16 @@
         "type": "internal",
         "href": "/clothing/d",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Contáctanos",
+        "text": "CONTÁCTANOS"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
   },
   "vtex.menu@2.x:submenu.accordion#clothing": {
+    "props": {
+      "blockClass": "contactanos"
+    },
     "children": ["vtex.menu@2.x:menu#clothing-accordion"]
   },
 
@@ -260,19 +269,21 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "rich-text#contact-info"
+      // "menu-item#shorts",
+      // "menu-item#tank-tops",
+      // "menu-item#shirts",
+      // "menu-item#sweatshirt",
+      // "menu-item#cropped"
     ]
   },
 
   "menu-item#decoration-mobile": {
     "props": {
+      "blockClass": "acordeon-menu",
       "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
+        "tagTitle": "Servicio al cliente",
+        "text": "SERVICIO AL CLIENTE"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
@@ -286,17 +297,22 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      // "menu-item#smartphones",
+      // "menu-item#videogames",
+      // "menu-item#tvs"
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
     ]
   },
 
   "menu-item#sale-mobile": {
     "props": {
+      "blockClass": "acordeon-menu",
       "itemProps": {
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Secciones",
+        "text": "SECCIONES"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
@@ -310,15 +326,55 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      // "menu-item#smartphones",
+      // "menu-item#videogames",
+      // "menu-item#tvs"
+      "menu-item#clothing",
+      "menu-item#shorts",
+      "menu-item#tank-tops"
     ]
+  },
+
+  "menu-item#siguenos-mobile": {
+    "props": {
+      "blockClass": "acordeon-menu",
+      "itemProps": {
+        "tagTitle": "Siguenos",
+        "text": "SIGUENOS"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#siguenos"]
+  },
+  "vtex.menu@2.x:submenu.accordion#siguenos": {
+    "props": {
+      "blockClass": "siguenos"
+    },
+    "children": ["vtex.menu@2.x:menu#footer-siguenos-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-siguenos-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "social-networks",
+      "rich-text#medio-pago",
+      "image#medio-pago",
+      "rich-text#libro-reclamaciones-mobile"
+    ]
+  },
+
+  "rich-text#libro-reclamaciones-mobile": {
+    "props": {
+      "blockClass": "libroReclamacionesMobile",
+      "text": "Libro de Reclamaciones"
+    }
   },
 
   "menu-item#clothing": {
     "props": {
       "id": "menu-item-category-clothing",
+      "blockClass": "menu-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -335,6 +391,7 @@
   "menu-item#shorts": {
     "props": {
       "id": "menu-item-shorts",
+      "blockClass": "menu-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -351,6 +408,7 @@
   "menu-item#tank-tops": {
     "props": {
       "id": "menu-item-tank-tops",
+      "blockClass": "menu-link",
       "type": "custom",
       "iconId": null,
       "highlight": false,

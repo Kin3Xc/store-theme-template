@@ -27,21 +27,34 @@
   },
   "image#pre-header": {
     "props": {
-      "src": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/20500ef8-30d7-46d7-a807-227e736944ed___effd80484bb8d5fe266e4e38863f3af5.webp"
+      "src": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/badd682d-bf1f-479e-9625-92d3c38968ec___ba2aa061a945038cfd5221735cc9c566.jpg"
+    }
+  },
+
+  "flex-layout.row#2-mobile": {
+    "props": {
+      "fullWidth": "true",
+      "blockClass": "preheader-class"
+    },
+    "children": ["image#pre-header-mobile"]
+  },
+  "image#pre-header-mobile": {
+    "props": {
+      "src": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/13b10a46-132d-4223-aad7-e0c118e7783f___12041369180340c1ecd2c94cb33658ef.jpg"
     }
   },
 
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
-      "horizontalAlign": "center",
+      "horizontalAlign": "left",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer"
+      "vtex.menu@2.x:menu#websites"
+      // "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#spacer": {
@@ -97,7 +110,8 @@
     "props":{
       "optionsTitle": "Elige una de las opciones para confirmar tu identidad",
       "iconLabel": "Mi cuenta",
-      "showIconProfile": true
+      "showIconProfile": true,
+      "labelClasses": "loginClass"
     }
   },
 
@@ -113,14 +127,17 @@
     "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-mobile",
+      "flex-layout.row#1-mobile"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
       "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
+      "search-bar",
       "minicart.v2"
     ],
     "props": {
@@ -152,7 +169,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/efdb19bd-0e3c-4f95-a805-ebbecacebd0b___0aeaf3d65cbbd37505704c762c5e9b4f.svg",
       "width": "70"
     }
   }

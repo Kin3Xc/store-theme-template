@@ -1,93 +1,20 @@
-/* add transitions */
-/* :global(.vtex-sticky-layout-0-x-container)
-  :global(.vtex-store-components-3-x-logoLink),
-:global(.vtex-sticky-layout-0-x-container)
-  :global(.vtex-minicart-2-x-openIconContainer),
-:global(.vtex-sticky-layout-0-x-container)
-  :global(.vtex-store-components-3-x-searchBarContainer) {
-  transition: all 0.3s ease;
-  display: block;
-} */
-
-/* desktop/mobile main header padding and background transitions */
-/* :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-  transition: background 0.3s ease;
-  will-change: padding, background;
-} */
-
 /* main header desktop has a bigger padding when not stuck */
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
-/* add a box-shadow to desktop/mobile header when stuck */
-/* :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-} */
-
-/*
- * remove the extra padding when stuck from the desktop header
- * we add a transition only when "stuck" for the "unstick" step seem faster
- */
-/* :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  transition: padding 0.3s ease, background 0.3s ease;
-  padding-top: 0;
-  padding-bottom: 0;
-} */
-
-/* if supported add some translucency to the desktop/mobile header background */
-/* @supports (backdrop-filter: blur(5px)) { */
-  /* :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    backdrop-filter: blur(8px);
-  } */
-
-  /* header background when stuck and not hovered */
-  /* :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    background: rgba(240, 240, 240, 0.8);
-  } */
-/* } */
-
 /* stick wrapper with the same color as the desktop/mobile header */
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
   background-color: #7300e0;
 }
 
-/* resize the logo for neat effect */
-/* :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-store-components-3-x-logoLink) {
-  transform: scale(0.85);
-} */
-
-/* @media (prefers-reduced-motion: reduce) {
-  :global(.vtex-sticky-layout-0-x-container)
-    :global(.vtex-store-components-3-x-logoLink),
-  :global(.vtex-sticky-layout-0-x-container)
-    :global(.vtex-minicart-2-x-openIconContainer),
-  :global(.vtex-sticky-layout-0-x-container)
-    :global(.vtex-store-components-3-x-searchBarContainer),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-    transition: none;
-  }
-} */
 :global(.vtex-flex-layout-0-x-flexRowContent--preheader-class),
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header){
   background-color: #7300e0;
 }
 
 :global(.vtex-menu-2-x-styledLink--menu-item){
+  font-family: 'Lato-Bold', sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: #fff;
@@ -96,6 +23,7 @@
   -webkit-transition: all .3s;
   transition: all .3s;
   letter-spacing: .7px;
+  padding-bottom: 4px;
 }
 :global(.vtex-menu-2-x-styledLink--menu-item):hover{
   border-bottom: solid;
@@ -110,17 +38,16 @@
 :global(.vtex-store-components-3-x-searchBarIcon--search){
   color: #7300e0;
 }
-:global(.vtex-login-2-x-label),
-:global(.vtex-minicart-2-x-minicartIconContainer){
-  color: #fff;
-  text-transform: capitalize;
+:global(.vtex-store-components-3-x-searchBarIcon--search){
+  background: url('https://res.cloudinary.com/oglit/image/upload/v1616598969/realplazago/lupa-buscador.png') no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 25px;
 }
 
 :global(.vtex-store-components-3-x-searchBarContainer){
   width: 45rem;
-}
-:global(.vtex-login-2-x-profileIcon){
-  color: #fff
+  /* padding: 18px 15px 0; */
 }
 :global(.vtex-login-2-x-container) :global(.vtex-button):hover{
   background-color: transparent;
@@ -129,5 +56,77 @@
   background-color: transparent;
 }
 :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-styleguide-9-x-input)::placeholder{
+  font-family: 'Lato-Regular', sans-serif;
+  color: #7300e0;
+  font-size: 15px;
+}
+:global(.vtex-login-2-x-container) :global(.vtex-button__label){
+  border-right: 1px #fff solid;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 14px;
+}
+:global(.vtex-input-prefix__group){
+  border-style: none;
+}
+:global(.vtex-store-components-3-x-searchIcon){
+  display: none;
+  /* width: 22px;
+  height: 22px; */
+}
+
+@media screen and (min-width: 1025px){
+  :global(.vtex-store-components-3-x-searchBarContainer){
+    width: 650px;
+  }
+}
+
+
+
+/* MOBILE */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile){
+  height: 58px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-store-drawer-0-x-openIconContainer){
+  color: #7300e0;
+  position: absolute;
+  left: 70px;
+  top: 38px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-store-components-3-x-logoImage){
+  position: absolute;
+  width: 50px;
+  height: 47px;
+  left: 8px;
+  top: 35px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-store-components-3-x-searchBarContainer){
+  width: 18rem;
+  margin-left: 16px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-styleguide-9-x-input){
+  padding-left:35px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-styleguide-9-x-input)::placeholder{
+  padding-left: 4px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-input__suffix){
+  display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-minicart-2-x-openIconContainer){
+  position: absolute;
+  right: 0px;
+  top: -19px;
+  padding: 0;
+  margin: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-minicart-2-x-openIconContainer) :global(.vtex-minicart-2-x-minicartQuantityBadgeDefault){
+  position: absolute;
+  top: -2px;
+  right: -7px;
+  background-color: #7300e0;
+  color: #fff;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.vtex-minicart-2-x-cartIcon){
   color: #7300e0;
 }

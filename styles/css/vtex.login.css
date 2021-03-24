@@ -1,0 +1,32 @@
+.profileIcon{
+  background: url('https://res.cloudinary.com/oglit/image/upload/v1616598969/realplazago/mi-cuenta.png') no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 30px;
+  height: 100%;
+  position: relative;
+  right: -13px;
+  top: -4px;
+}
+
+.label{
+  font-family: 'Lato-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.button__label{
+  border-right: 1px #fff solid;
+}
+.button:hover,
+.button:focus,
+.button:active{
+  background-color: transparent;
+}
+.label,
+.minicartIconContainer{
+  color: #fff;
+  text-transform: capitalize;
+}

@@ -3,6 +3,7 @@
     "children": [
       "drawer",
       "menu-item#categories",
+      "menu-item#vente-aqui",
       "menu-item#mundo-organico",
       "menu-item#tecnologia",
       "menu-item#electrohogar",
@@ -14,6 +15,22 @@
   "menu-item#categories": {
     "props": {
       "id": "menu-item-categories",
+      "blockClass": "menu-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Categoríass",
+        "text": "CATEGORÍAS"
+      }
+    }
+  },
+  "menu-item#vente-aqui": {
+    "props": {
+      "id": "menu-item-vende-aqui",
       "blockClass": "menu-item",
       "type": "custom",
       "iconId": null,

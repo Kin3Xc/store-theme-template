@@ -1,0 +1,23 @@
+.menuContainerNav{
+  margin-left: 50px;
+}
+:global(.vtex-store-drawer-0-x-openIconContainer){
+  position: relative;
+  left: 30px;
+  top: 1px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--mobile-footer) :global(.vtex-menu-2-x-styledLinkContent){
+  color: #fff;
+}
+.styledLinkContent--acordeon-menu{
+  font-family: 'Lato-Bold',sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: .4px;
+  padding: 12px 0;
+}
+.submenuAccordion--contactanos,
+.submenuAccordion--siguenos{
+  margin-left: 20px;
+}
