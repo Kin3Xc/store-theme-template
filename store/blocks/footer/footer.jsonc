@@ -118,6 +118,9 @@
   },
 
   "footer-layout.mobile": {
+    "props": {
+      "blockClass": "mobile-footer-container"
+    },
     "children": [
       "flex-layout.row#1-footer-mobile",
       "rich-text#location-mobile",

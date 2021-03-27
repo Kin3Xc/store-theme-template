@@ -111,3 +111,42 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+
+/* PRODUCT PAGE */
+.caretIcon{
+  display: none;
+}
+.swiperCaretNext::before{
+  font-family: icomoon;
+  font-size: 24px;
+  color: #7300e0;
+  display: block;
+  content: url('https://res.cloudinary.com/oglit/image/upload/v1616622854/realplazago/next-icon.png');
+}
+.swiperCaretPrev::before{
+  font-family: icomoon;
+  font-size: 24px;
+  color: #7300e0;
+  display: block;
+  content: url('https://res.cloudinary.com/oglit/image/upload/v1616622854/realplazago/prev-icon.png');
+}
+.swiperPaginationClickable{
+  position: initial;
+}
+.swiperBullet{
+  width: 11px;
+  height: 11px;
+  margin: 0 6px!important;
+  position: relative;
+}
+.productNameContainer{
+  margin-bottom: 0;
+  font-family: 'Lato-Black', sans-serif !important;
+  font-size: 18px;
+  font-weight: 900;
+  color: #242424;
+  text-transform: capitalize;
+  line-height: 1.3;
+  letter-spacing: .35px;
+}

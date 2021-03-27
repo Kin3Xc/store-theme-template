@@ -98,3 +98,15 @@
 .flexRowContent--mobile-footer{
   padding-bottom: 0;
 }
+
+
+/* PRODUCT */
+.flexRow--main-product{
+  width: 100%;
+  padding: 0 10px;
+}
+
+.flexRow--whitelist-class{
+  margin-bottom: 30px;
+  float: right;
+}

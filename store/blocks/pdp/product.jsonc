@@ -6,7 +6,8 @@
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
-      "shelf.relatedProducts",
+      // "shelf.relatedProducts",
+      "list-context.product-list#demo1",
       "product-reviews",
       "product-questions-and-answers"
     ]
@@ -35,6 +36,7 @@
   },
   "flex-layout.row#product-main": {
     "props": {
+      "blockClass": "main-product",
       "colGap": 7,
       "rowGap": 7,
       "marginTop": 4,
@@ -90,6 +92,10 @@
       "rowGap": 0
     },
     "children": [
+      "flex-layout.row#whitelist",
+      "my-first-app",
+      // "seller-name",
+      "vtex.store-components:product-brand#produt-page",
       "flex-layout.row#product-name",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
@@ -103,9 +109,39 @@
       "product-gifts",
       "flex-layout.row#buy-button",
       "availability-subscriber",
-      "shipping-simulator",
+      // "shipping-simulator",
       "share#default"
     ]
+  },
+  "flex-layout.row#whitelist":{
+    "props": {
+      "blockClass": "whitelist-class",
+      "horizontalAlign": "right"
+    },
+    "children": [
+      "flex-layout.col#spacer-whitelist",
+      "flex-layout.col#image-whitelist"
+    ]
+  },
+  
+  "flex-layout.col#spacer-whitelist": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#image-whitelist": {
+    "children": ["image#icon-whitelist"]
+  },
+  "image#icon-whitelist": {
+    "props": {
+      "src": "https://res.cloudinary.com/oglit/image/upload/v1616624156/realplazago/whitelist-icon.png"
+    }
+  },
+
+  "vtex.store-components:product-brand#produt-page": {
+    "props": {
+      "withLink": "text"
+    }
   },
 
   "flex-layout.row#product-name": {

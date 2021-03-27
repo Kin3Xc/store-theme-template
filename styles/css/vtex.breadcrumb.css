@@ -1,0 +1,12 @@
+.homeLink{
+  display: none;
+}
+.arrow--1 .caretIcon{
+  display: none;
+}
+.arrow{
+  font-family: 'Lato-Regular',sans-serif;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  color: #979899;
+}
