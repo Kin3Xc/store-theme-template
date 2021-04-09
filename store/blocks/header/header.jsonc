@@ -97,7 +97,7 @@
     },
     "children": ["logo#desktop"]
   },
-  
+
   // custom search
   "search-bar": {
     "props":{
@@ -108,10 +108,16 @@
   // custom login
   "login": {
     "props":{
-      "optionsTitle": "Elige una de las opciones para confirmar tu identidad",
+      "emailAndPasswordTitle": "Inicio de sesión",
+      "accessCodeTitle": "Ingresar con codigo de acceso",
+      "emailPraceholder": "Correo electronico",
+      "passwordPlaceholder": "Contraseña",
+      "showPasswordVerificationIntoTooltip": true,
+      "optionsTitle": "Elige una de las opciones para confirmar tu identidad.",
       "iconLabel": "Mi cuenta",
       "showIconProfile": true,
-      "labelClasses": "loginClass"
+      "labelClasses": "loginClass",
+      "hasGoogleOneTap": true
     }
   },
 

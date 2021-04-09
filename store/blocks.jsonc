@@ -29,7 +29,13 @@
       "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true,
       "optionsTitle": "Mi cuenta",
-      "emailAndPasswordTitle": "Mi cuenta"
+      "emailAndPasswordTitle": "Ingresa con tu correo",
+      "accessCodeTitle": "Recibe un código de acceso para iniciar",
+      "emailPlaceholder": "Correo electronico aquí",
+      "passwordPlaceholder": "Password",
+      "acessCodePlaceholder": "Código de acceso",
+      "providerPasswordButtonLabel": "Label button password"
+
     }
   },
 
